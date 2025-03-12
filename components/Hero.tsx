@@ -43,9 +43,9 @@ const Hero = () => {
             key={index}
             src={src}
             alt={`punk${index + 1}`}
-            width={120}
-            height={120}
-            className="h-auto max-w-full sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px]"
+            width={200}
+            height={200}
+            className="h-auto max-w-full sm:w-[100px] sm:h-[100px] lg:w-[171px] lg:h-[150px]"
           />
         ))}
       </section>

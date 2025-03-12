@@ -8,7 +8,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { IoMdMenu, IoMdClose } from "react-icons/io"; // Hamburger and Close Icons
 
 const links = [
-  { id: 2, title: "About", url: "/about" },
+  { id: 2, title: "About", url: "#about" },
   { id: 3, title: "Collections", url: "/collections" },
   { id: 4, title: "FAQS", url: "/faqs" },
 ];
