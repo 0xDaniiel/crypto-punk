@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const heroImages = [
   "/images/punk1.svg",
@@ -31,9 +32,12 @@ const Hero = () => {
           10,000 unique collectible characters with proof of ownership stored on
           the Ethereum blockchain.
         </p>
-        <Button className="bg-white text-black hover:text-white">
+        <Link
+          href={"https://opensea.io/collection/cryptopunks"}
+          className="bg-white text-black hover:text-white rounded-md py-2 px-5 "
+        >
           Mint Now
-        </Button>
+        </Link>
       </div>
 
       {/* Desktop & iPad Landscape */}

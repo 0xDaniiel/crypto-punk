@@ -7,19 +7,19 @@ const recent = [
   {
     id: 11,
     name: "CryptoPunk #7804",
-    price: "New bid of 1,600 ETH",
+    price: "New bid of 16 ETH",
     image: "/images/punk12.svg",
   },
   {
     id: 12,
     name: "CryptoPunk #3100",
-    price: "Offered for 2,700 ETH",
+    price: "Offered for 27 ETH",
     image: "/images/punk13.svg",
   },
   {
     id: 13,
     name: "CryptoPunk #7804",
-    price: "New bid 2,900 ETH",
+    price: "New bid 29 ETH",
     image: "/images/punk14.svg",
   },
 ];
@@ -28,19 +28,19 @@ const sales = [
   {
     id: 11,
     name: "CryptoPunk #7804",
-    price: "4,200 ETH",
+    price: "22 ETH",
     image: "/images/punk9.svg",
   },
   {
     id: 21,
     name: "CryptoPunk #3100",
-    price: "3,200 ETH",
+    price: "32 ETH",
     image: "/images/punk10.svg",
   },
   {
     id: 31,
     name: "CryptoPunk #8094",
-    price: "5,600 ETH",
+    price: "25.75 ETH",
     image: "/images/punk11.svg",
   },
 ];
@@ -61,13 +61,23 @@ const WebContent = () => {
                 page displaying its attributes, ownership details, and options
                 for buying or selling.
               </p>
-              <div className="flex gap-4 justify-center lg:justify-start mt-6">
-                <Button className="bg-gray-300 text-black  hover:text-black  hover:bg-white  px-6 py-3 font-medium cursor-pointer">
+              <div className="flex gap-4 justify-center lg:justify-start mt-6 items-center">
+                <Link
+                  href={"https://opensea.io/collection/cryptopunks"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-300 text-black  hover:text-black rounded-md   hover:bg-white  px-5 py-2 font-medium cursor-pointer"
+                >
                   Buy a Punk
-                </Button>
-                <Button className="px-6 py-3 font-medium cursor-pointer">
+                </Link>
+                <Link
+                  href={"https://opensea.io/collection/cryptopunks"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2 font-medium cursor-pointer bg-gray-800 rounded-md  hover:bg-gray-700"
+                >
                   View Full Collection
-                </Button>
+                </Link>
               </div>
             </section>
             <section className="lg:w-1/2 flex justify-center">
@@ -87,7 +97,14 @@ const WebContent = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <section className="flex justify-between">
             <h2 className=" text-xl  md:text-2xl">Largest sales </h2>
-            <p className="border py-2 px-5 rounded-md ">View all</p>
+            <Link
+              href={"https://cryptopunks.app/cryptopunks/sales"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border py-2 px-5 rounded-md "
+            >
+              View all
+            </Link>
           </section>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
@@ -117,7 +134,14 @@ const WebContent = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <section className="flex justify-between">
             <h2 className=" text-xl  md:text-2xl">Recent transaction </h2>
-            <p className="border py-2 px-5 rounded-md ">View all</p>
+            <Link
+              href={"https://cryptopunks.app/cryptopunks/sales"}
+              className="border py-2 px-5 rounded-md "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View all
+            </Link>
           </section>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
