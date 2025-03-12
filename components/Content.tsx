@@ -39,8 +39,8 @@ const sales = [
   },
   {
     id: 31,
-    name: "CryptoPunk #7804",
-    price: "4,200 ETH",
+    name: "CryptoPunk #8094",
+    price: "5,600 ETH",
     image: "/images/punk11.svg",
   },
 ];
