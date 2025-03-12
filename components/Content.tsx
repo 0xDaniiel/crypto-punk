@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const recent = [
   {
@@ -22,6 +23,7 @@ const recent = [
     image: "/images/punk14.svg",
   },
 ];
+
 const sales = [
   {
     id: 11,
@@ -43,7 +45,7 @@ const sales = [
   },
 ];
 
-const About = () => {
+const WebContent = () => {
   return (
     <div className="mt-10 bg-white">
       <div className="bg-black text-white rounded-b-[50px]  pb-10" id="about">
@@ -84,7 +86,7 @@ const About = () => {
       <div className=" text-  py-10 " id="largest-collection">
         <div className="container mx-auto px-6 lg:px-12">
           <section className="flex justify-between">
-            <h1 className=" text-xl  md:text-2xl">Largest sales </h1>
+            <h2 className=" text-xl  md:text-2xl">Largest sales </h2>
             <p className="border py-2 px-5 rounded-md ">View all</p>
           </section>
 
@@ -114,7 +116,7 @@ const About = () => {
       <div className=" text-  py-10 " id="recent-collection">
         <div className="container mx-auto px-6 lg:px-12">
           <section className="flex justify-between">
-            <h1 className=" text-xl  md:text-2xl">Recent transaction </h1>
+            <h2 className=" text-xl  md:text-2xl">Recent transaction </h2>
             <p className="border py-2 px-5 rounded-md ">View all</p>
           </section>
 
@@ -140,8 +142,75 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <div
+        className="bg-black text-white rounded-t-[50px] py-10 "
+        id="get-started"
+      >
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
+          <section className="lg:w-1/2 text-center ">
+            <h2 className=" text-xl  md:text-2xl"> How do i get a punk ?</h2>
+          </section>
+
+          <section className="lg:w-1/2 ">
+            <section className="step-1">
+              <p className="rounded-full p-1">1</p>
+              <Image
+                alt="metamsask"
+                height={50}
+                width={50}
+                src="/images/metamask.svg"
+              />
+              <p className="md:text-2xl text-xl ">
+                Download and install metamask
+              </p>
+              <p>
+                Download and install a chrome browser plugin called Metamask.
+                This will allow websites (that you authorise) access your
+                Ethereum account
+              </p>
+              <Link
+                href="https://metamask.io/download.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-none border text-gray-300">
+                  Download Metamask
+                </Button>
+              </Link>
+            </section>
+
+            <section className="step-2">
+              <p className="rounded-full p-1 ">2</p>
+              <Image
+                alt="metamsask"
+                height={50}
+                width={50}
+                src="/images/eth-icon.svg"
+              />
+              <p className="md:text-2xl text-xl ">Buy some Ethereum</p>
+              <p>
+                If you made a new account buy some Ethereum. The Metamask plugin
+                has a button that allows you buy ethereum from coin base{" "}
+              </p>
+            </section>
+
+            <section className="step-3">
+              <p className="rounded-full p-1 w-fit border">3</p>
+              <p className="md:text-2xl text-xl ">
+                Start bidding, buying and selling
+              </p>
+              <p>
+                Once you have the plugin installed, this website will recognise
+                it and add buttons that allow you to bid on, buy and sell punks
+                directly in the interface.
+              </p>
+            </section>
+          </section>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default About;
+export default WebContent;
