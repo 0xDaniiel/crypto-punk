@@ -2,6 +2,26 @@ import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
+const recent = [
+  {
+    id: 11,
+    name: "CryptoPunk #7804",
+    price: "New bid of 1,600 ETH",
+    image: "/images/punk12.svg",
+  },
+  {
+    id: 12,
+    name: "CryptoPunk #3100",
+    price: "Offered for 2,700 ETH",
+    image: "/images/punk13.svg",
+  },
+  {
+    id: 13,
+    name: "CryptoPunk #7804",
+    price: "New bid 2,900 ETH",
+    image: "/images/punk14.svg",
+  },
+];
 const sales = [
   {
     id: 11,
@@ -60,6 +80,7 @@ const About = () => {
           </div>
         </div>
       </div>
+
       <div className=" text-  py-10 " id="largest-collection">
         <div className="container mx-auto px-6 lg:px-12">
           <section className="flex justify-between">
@@ -69,6 +90,36 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
             {sales.map((sale) => (
+              <div
+                key={sale.id}
+                className="bg-white rounded-lg shadow-lg flex flex-col items-center justify-center"
+              >
+                <Image
+                  src={sale.image}
+                  alt={sale.name}
+                  width={200}
+                  height={200}
+                  className="rounded-t-lg"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-bold">{sale.name}</h3>
+                  <p className="text-gray-500 text-center">{sale.price}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className=" text-  py-10 " id="recent-collection">
+        <div className="container mx-auto px-6 lg:px-12">
+          <section className="flex justify-between">
+            <h1 className=" text-xl  md:text-2xl">Recent transaction </h1>
+            <p className="border py-2 px-5 rounded-md ">View all</p>
+          </section>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+            {recent.map((sale) => (
               <div
                 key={sale.id}
                 className="bg-white rounded-lg shadow-lg flex flex-col items-center justify-center"
