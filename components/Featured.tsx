@@ -19,7 +19,7 @@ const articles = [
     title: "CoinDesk",
     // description: "New DeFi strategies emerge as crypto lending evolves.",
     description:
-      "CryptoKitties, CryptoPunks and the birth of a cottage industry.",
+      "CryptoKitties, CryptoPunks and the birth of a cottage industry as NFTs take off.",
   },
   {
     title: "Decrypt",

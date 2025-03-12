@@ -9,8 +9,8 @@ import { IoMdMenu, IoMdClose } from "react-icons/io"; // Hamburger and Close Ico
 
 const links = [
   { id: 2, title: "About", url: "#about" },
-  { id: 3, title: "Collections", url: "/collections" },
-  { id: 4, title: "FAQS", url: "/faqs" },
+  { id: 3, title: "Collections", url: "#largest-collection" },
+  { id: 4, title: "FAQS", url: "#faqs" },
 ];
 
 const Header = () => {
@@ -19,7 +19,9 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center py-4 relative px-7">
       {/* Logo */}
-      <Image src="/images/punkicon.svg" alt="logo" width={30} height={30} />
+      <Link href={"/"}>
+        <Image src="/images/punkicon.svg" alt="logo" width={30} height={30} />
+      </Link>
 
       {/* Hamburger Button - Only visible on mobile */}
       <button
