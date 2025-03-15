@@ -1,5 +1,4 @@
 import React from "react";
-import { TbSectionFilled } from "react-icons/tb";
 
 const frequentQuestions = [
   {
@@ -38,7 +37,7 @@ const Faq = () => {
       <hr className="border-gray-500" />
 
       <div className="space-y-6 md:space-y-10">
-        {frequentQuestions.map((item, index) => (
+        {frequentQuestions.map((item) => (
           <section
             key={item.id}
             className="flex flex-col md:flex-row md:justify-between py-5"

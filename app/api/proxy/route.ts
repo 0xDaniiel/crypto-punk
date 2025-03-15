@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
   try {
+    console.log(req);
     const response = await fetch(
       "https://cryptopunks-api.herokuapp.com/api/v1/punks/listings?limit=3",
       {
