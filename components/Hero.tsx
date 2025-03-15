@@ -34,7 +34,7 @@ const Hero = () => {
         </p>
         <Link
           href={"https://opensea.io/collection/cryptopunks"}
-          className="bg-white text-black hover:text-white rounded-md py-2 px-5 "
+          className="bg-gray-300 text-black hover:bg-white rounded-md py-2 px-5 "
         >
           Mint Now
         </Link>
