@@ -6,7 +6,6 @@ A simple redesign of the CryptoPunks website whilst maintaining it's functionali
 
 - Display CryptoPunk-style NFTs
 - Wallet connection (MetaMask, RainbowKit)
-- Live update on NFTs sales
 - Responsive UI (Tailwind CSS)
 - Built with Next.js and TypeScript
 
